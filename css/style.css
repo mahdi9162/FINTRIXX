@@ -79,6 +79,13 @@ body {
   cursor: pointer;
 }
 
+.head-title {
+  display: flex;
+  line-height: 26px;
+  letter-spacing: -2%;
+  gap: 8px;
+}
+
 /* End Repeated Styles */
 
 /* Header Start here */
@@ -117,13 +124,6 @@ body {
   align-items: center;
   padding: 120px 0px 200px;
   position: relative;
-}
-
-#banner-amazon-div {
-  display: flex;
-  line-height: 26px;
-  letter-spacing: -2%;
-  gap: 8px;
 }
 
 #banner-heading {
@@ -330,15 +330,13 @@ body {
 }
 
 /* Our story */
-#out-story-section {
+#our-story-section {
   padding: 40px 120px 100px;
   text-align: center;
 }
 
 .our-story-title {
-  display: flex;
   justify-content: center;
-  gap: 8px;
 }
 
 .our-story-title p {
@@ -346,7 +344,7 @@ body {
   letter-spacing: -2%;
 }
 
-#out-story-section h5 {
+#our-story-section h5 {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -354,7 +352,7 @@ body {
   margin: 16px 0;
 }
 
-#out-story-section .out-story-paragraph {
+#our-story-section .out-story-paragraph {
   max-width: 552px;
   margin: auto;
   font-size: 18px;
@@ -383,11 +381,6 @@ body {
   color: var(--text01-color);
 }
 
-.choose-us-title {
-  display: flex;
-  gap: 8px;
-}
-
 .choose-us-left-div h5 {
   font-size: 56px;
   line-height: 64px;
@@ -396,7 +389,7 @@ body {
   font-weight: 600;
 }
 
-.choose-us-left-div p {
+.choose-us-paragraph {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -2%;
@@ -503,4 +496,94 @@ body {
   width: 24px;
   height: 24px;
 }
+
+/* Our services */
+
+#services-section {
+  margin-bottom: 100px;
+}
+
+.services-heading {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.services-title {
+  justify-content: center;
+}
+
+/* card */
+.services-parent-card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.services-heading h5 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  margin-bottom: 16px;
+}
+
+.services-heading p {
+  opacity: 80%;
+}
+
+.services-card {
+  width: 588px;
+  height: 222px;
+  border: 1px solid var(--stroke02-color);
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-head p {
+  font-size: 18px;
+}
+
+.card-head figure {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+
+.card-head figure img {
+  width: 64px;
+  height: 64px;
+}
+
+.vartical-border {
+  width: 3px;
+  height: 48px;
+  background: var(--primary-color);
+  opacity: 20%;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin: 6px 0;
+}
+
+.tick-mark-parent-div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-head {
+  display: flex;
+}
+
+.tick-mark-div {
+  display: flex;
+  gap: 8px;
+}
+
 /* main End here */
