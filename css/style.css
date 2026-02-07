@@ -327,6 +327,38 @@ body {
   letter-spacing: -2%;
 }
 
+/* Our story */
+#out-story-section {
+  padding: 40px 120px 100px;
+  text-align: center;
+}
 
+.our-story-title {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.our-story-title p {
+  line-height: 26px;
+  letter-spacing: -2%;
+}
+
+#out-story-section h5 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -2%;
+  margin: 16px 0;
+}
+
+#out-story-section .out-story-paragraph {
+  max-width: 552px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  margin-bottom: 40px;
+}
 
 /* main End here */
