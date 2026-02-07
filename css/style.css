@@ -86,6 +86,16 @@ body {
   gap: 8px;
 }
 
+.vartical-border {
+  width: 3px;
+  height: 48px;
+  background: var(--primary-color);
+  opacity: 20%;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin: 6px 0;
+}
+
 /* End Repeated Styles */
 
 /* Header Start here */
@@ -503,12 +513,14 @@ body {
   margin-bottom: 100px;
 }
 
-.services-heading {
+.services-heading,
+.growth-heading {
   margin-bottom: 64px;
   text-align: center;
 }
 
-.services-title {
+.services-title,
+.growth-title {
   justify-content: center;
 }
 
@@ -520,7 +532,8 @@ body {
   gap: 24px;
 }
 
-.services-heading h5 {
+.services-heading h5,
+.growth-heading h5 {
   font-weight: 600;
   font-size: 56px;
   line-height: 64px;
@@ -528,7 +541,8 @@ body {
   margin-bottom: 16px;
 }
 
-.services-heading p {
+.services-heading p,
+.growth-heading p {
   opacity: 80%;
 }
 
@@ -561,16 +575,6 @@ body {
   height: 64px;
 }
 
-.vartical-border {
-  width: 3px;
-  height: 48px;
-  background: var(--primary-color);
-  opacity: 20%;
-  border-radius: 2px;
-  flex-shrink: 0;
-  margin: 6px 0;
-}
-
 .tick-mark-parent-div {
   display: flex;
   flex-direction: column;
@@ -590,7 +594,6 @@ body {
 #approach-section {
   background-color: var(--bg02-color);
   padding: 100px 120px;
-  margin-bottom: 100px;
   height: 690px;
 }
 
@@ -658,6 +661,47 @@ body {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -2%;
+}
+
+/* Growth section */
+#growth-section {
+  padding: 100px 0;
+}
+
+.growth-card-parent-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.growth-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 384px;
+  height: 174px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke02-color);
+  padding: 24px;
+}
+
+.growth-card p:first-child {
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -2%;
+}
+
+.growth-card p:last-child {
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  color: var(--text03-color);
+  white-space: nowrap;
+}
+
+.growth-btn {
+  text-align: center;
 }
 
 /* main End here */
