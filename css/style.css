@@ -704,4 +704,38 @@ body {
   text-align: center;
 }
 
+/* Growth Help section */
+#growth-help {
+  padding: 100px 0;
+  background: var(--bg02-color);
+  margin-bottom: 100px;
+}
+
+.growth-help-title {
+  justify-content: center;
+  color: var(--text01-color);
+}
+
+.growth-help-heading h5 {
+  color: var(--text01-color);
+}
+
+.growth-help-heading p {
+  color: var(--text01-color);
+}
+
+.growth-help-card {
+  background-color: var(--bg03-color);
+  border: none;
+}
+
+.growth-help-card p:last-child {
+  color: var(--text01-color);
+  opacity: 90%;
+}
+
+.growth-help-btn {
+  border-color: var(--stroke02-color);
+}
+
 /* main End here */
