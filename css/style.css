@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #ffa500;
+  --text01-color: #ffffff;
+  --text02-color: #151515;
+  --text03-color: #4f4d4d;
+}
+
+/* Start Repeated Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section-gap {
+  margin: 120px auto;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+/* End Repeated Styles */
+
+/* Header Start here */
+
+/* Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+
+#nav-right-div {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+#navLink-div {
+  word-spacing: 32px;
+  color: var(--text02-color);
+}
+
+#navlink-services {
+  font-weight: 500;
+}
+
+#nav-btn {
+  background-color: var(--primary-color);
+  color: var(--text01-color);
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 3px 3px 0;
+  padding: 12px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* Header End here */
