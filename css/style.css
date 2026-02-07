@@ -235,6 +235,7 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   position: absolute;
 
@@ -256,7 +257,7 @@ body {
 }
 
 #avatars figure:first-child {
-  margin-left: 16px;
+  margin-left: 0px;
 }
 
 #avatars-card-text {
@@ -279,3 +280,53 @@ body {
 }
 
 /* Header End here */
+
+/* main Start here */
+
+/* Statistics section */
+#statistics-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#statistics-section p:first-child {
+  color: var(--text02-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+
+#statistics-card-div {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.statistics-card {
+  width: 282px;
+  padding: 32px 16px;
+  border: 1px solid var(--stroke02-color);
+  border-radius: 16px;
+}
+
+.statistics-card p:first-child {
+  color: var(--text02-color);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  margin-bottom: 12px;
+}
+
+.statistics-card p:last-child {
+  color: var(--text03-color);
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -2%;
+}
+
+
+
+/* main End here */
