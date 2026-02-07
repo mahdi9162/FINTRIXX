@@ -32,6 +32,8 @@ body {
   --stroke02-color: #ececec;
 
   --bg01-color: #ffffff;
+  --bg02-color: #151515;
+  --bg03-color: #232323;
 }
 
 /* Start Repeated Styles */
@@ -361,4 +363,144 @@ body {
   margin-bottom: 40px;
 }
 
+/* Why choose us */
+#why-choose-us-section {
+  background-color: var(--bg02-color);
+  padding: 100px 12px;
+  margin-bottom: 100px;
+}
+
+#why-choose-us-parent-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* choose us left div */
+.choose-us-left-div {
+  flex: 1;
+  color: var(--text01-color);
+}
+
+.choose-us-title {
+  display: flex;
+  gap: 8px;
+}
+
+.choose-us-left-div h5 {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  margin: 12px 0 16px;
+  font-weight: 600;
+}
+
+.choose-us-left-div p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  margin-bottom: 40px;
+}
+
+.choose-us-btn {
+  border-color: var(--stroke02-color);
+}
+
+/* choose us right div */
+.choose-us-right-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+}
+
+.choose-us-right-div {
+  flex: 1;
+  margin-right: -60px;
+}
+
+#logo-arc {
+  display: flex;
+  margin-right: -100px;
+}
+
+#logo-arc img:first-child {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
+#logo-arc img:nth-child(2) {
+  margin-left: -50px;
+  transform: rotate(4deg);
+  position: relative;
+}
+
+#logo-arc img:nth-child(3) {
+  margin-left: -186px;
+  transform: rotate(4deg);
+  position: relative;
+}
+
+.right-div-cards-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.choose-us-card {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg03-color);
+  padding: 16px 20px;
+  font-size: 18px;
+  color: var(--text01-color);
+  border-radius: 16px;
+}
+
+.right-div-cards-parent div:first-child {
+  width: 195px;
+  position: relative;
+  left: -50px;
+}
+
+.right-div-cards-parent div:nth-child(2) {
+  width: 215px;
+  position: relative;
+  left: -30px;
+}
+
+.right-div-cards-parent div:nth-child(3) {
+  width: 198px;
+  position: relative;
+  left: -30px;
+}
+
+.right-div-cards-parent div:last-child {
+  width: 230px;
+  position: relative;
+  left: -80px;
+}
+
+.choose-us-card figure {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff12;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.choose-us-card figure img {
+  width: 24px;
+  height: 24px;
+}
 /* main End here */
