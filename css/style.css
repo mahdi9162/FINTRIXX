@@ -22,11 +22,16 @@ body {
 /* CSS Variables */
 :root {
   --primary-color: #ffa500;
+
   --text01-color: #ffffff;
   --text02-color: #151515;
   --text03-color: #4f4d4d;
+  --text04-color: #666666;
+
   --stroke01-color: #f2f2f2;
   --stroke02-color: #ececec;
+
+  --bg01-color: #ffffff;
 }
 
 /* Start Repeated Styles */
@@ -130,12 +135,12 @@ body {
 
 /* Total incomes div */
 
-#total-incomes-div {
+#total-incomes-card {
   position: absolute;
   width: 227px;
   height: 177px;
   padding: 16px;
-  background: #fff;
+  background: var(--bg01-color);
   border: 1px solid var(--stroke02-color);
   border-radius: 16px;
 
@@ -151,7 +156,7 @@ body {
 }
 
 /* bars row */
-#total-incomes-div .bars {
+#total-incomes-card .bars {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -159,11 +164,11 @@ body {
   flex: 1;
 }
 
-#total-incomes-div h4 {
+#total-incomes-card h4 {
   font-size: 18px;
 }
 
-#total-incomes-div .months {
+#total-incomes-card .months {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -171,7 +176,7 @@ body {
   color: #999;
 }
 
-#total-incomes-div .months span {
+#total-incomes-card .months span {
   width: 19px;
   text-align: center;
   display: inline-block;
@@ -217,11 +222,60 @@ body {
 
 /* 45+ users card  */
 
-/* right card */
-.float-card--right {
-  right: 120px;
-  top: 330px;
-  transform: rotate(12deg);
+#users-card-banner {
+  width: 236px;
+  height: 84px;
+  right: -80px;
+  top: 220px;
+  transform: rotate(16deg);
+  background: var(--bg01-color);
+  border: 1px solid var(--stroke02-color);
+  border-radius: 16px;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+#avatars {
+  display: flex;
+  align-items: center;
+}
+
+#avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  margin-left: -12px;
+  border: 2px solid var(--bg01-color);
+}
+
+#avatars figure:first-child {
+  margin-left: 16px;
+}
+
+#avatars-card-text {
+  text-align: center;
+}
+
+#avatars-card-text p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#avatars-card-text p i {
+  color: var(--primary-color);
+}
+
+#avatars-card-text p:last-child {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text04-color);
 }
 
 /* Header End here */
