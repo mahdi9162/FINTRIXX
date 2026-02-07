@@ -96,6 +96,14 @@ body {
   margin: 6px 0;
 }
 
+.custom-divider {
+  border: 0;
+  height: 1px;
+  background: #ececec33;
+  width: 90%;
+  margin: 0px 20px 20px;
+}
+
 /* End Repeated Styles */
 
 /* Header Start here */
@@ -629,14 +637,6 @@ body {
   margin-bottom: 20px;
 }
 
-.custom-divider {
-  border: 0;
-  height: 1px;
-  background: #ececec33;
-  width: 90%;
-  margin: 0px 20px 20px;
-}
-
 .approach-mission h5,
 .approach-vision h5 {
   font-size: 24px;
@@ -739,3 +739,79 @@ body {
 }
 
 /* main End here */
+
+/* Footer */
+footer {
+  background: var(--bg02-color);
+  padding: 100px 72px 40px;
+  height: 492px;
+  color: var(--text01-color);
+}
+
+.footer-parent-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left-div {
+  flex: 1;
+}
+
+.footer-left-div p {
+  line-height: 26px;
+  letter-spacing: -2%;
+  opacity: 90%;
+  margin-top: 16px;
+}
+
+.footer-right-div {
+  flex: 2;
+  justify-content: flex-end;
+  display: flex;
+  gap: 48px;
+}
+
+.footer-home-div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-home-div h6,
+.footer-contact-div h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -2%;
+}
+
+.footer-home-div a {
+  width: 200px;
+  opacity: 70%;
+  line-height: 26px;
+  letter-spacing: -2%;
+}
+
+.footer-contact-div div {
+  display: flex;
+  opacity: 70%;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.footer-custom-divider {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.footer-copyright {
+  opacity: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright div {
+  display: flex;
+  gap: 64px;
+}
