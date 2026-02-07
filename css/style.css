@@ -25,6 +25,8 @@ body {
   --text01-color: #ffffff;
   --text02-color: #151515;
   --text03-color: #4f4d4d;
+  --stroke01-color: #f2f2f2;
+  --stroke02-color: #ececec;
 }
 
 /* Start Repeated Styles */
@@ -43,9 +45,40 @@ body {
   color: var(--primary-color);
 }
 
+.text01-color {
+  color: var(--text01-color);
+}
+
+.text02-color {
+  color: var(--text02-color);
+}
+
+.text03-color {
+  color: var(--text03-color);
+}
+
+.block {
+  display: block;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text01-color);
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 3px 3px 0;
+  padding: 12px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
 /* End Repeated Styles */
 
 /* Header Start here */
+
+#header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 165, 0, 0.1) 100%);
+}
 
 /* Navbar */
 #navbar {
@@ -63,22 +96,132 @@ body {
 
 #navLink-div {
   word-spacing: 32px;
-  color: var(--text02-color);
+  color: var(--text03-color);
 }
 
 #navlink-services {
   font-weight: 500;
 }
 
-#nav-btn {
+/* Banner */
+#banner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0px 200px;
+  position: relative;
+}
+
+#banner-amazon-div {
+  display: flex;
+  line-height: 26px;
+  letter-spacing: -2%;
+  gap: 8px;
+}
+
+#banner-heading {
+  font-weight: 600;
+  text-align: center;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -2%;
+  margin-bottom: 48px;
+}
+
+/* Total incomes div */
+
+#total-incomes-div {
+  position: absolute;
+  width: 227px;
+  height: 177px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--stroke02-color);
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  left: -80px;
+  top: 220px;
+  transform: rotate(-16deg);
+
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* bars row */
+#total-incomes-div .bars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-end; /* bottom aligned bars */
+  flex: 1;
+}
+
+#total-incomes-div h4 {
+  font-size: 18px;
+}
+
+#total-incomes-div .months {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+#total-incomes-div .months span {
+  width: 19px;
+  text-align: center;
+  display: inline-block;
+  font-size: 8px;
+}
+
+.jan {
+  height: 59px;
+  width: 19px;
+  background-color: var(--stroke01-color);
+  border-radius: 16px;
+}
+.feb {
+  height: 80px;
+  width: 19px;
+  background-color: var(--stroke01-color);
+  border-radius: 16px;
+}
+.mar {
+  height: 62px;
+  width: 19px;
+  background-color: var(--stroke01-color);
+  border-radius: 16px;
+}
+.apr {
+  height: 80px;
+  width: 19px;
   background-color: var(--primary-color);
-  color: var(--text01-color);
-  border-style: solid;
-  border-color: #000;
-  border-width: 0 3px 3px 0;
-  padding: 12px 20px;
-  border-radius: 40px;
-  cursor: pointer;
+  border-radius: 16px;
+}
+.may {
+  height: 34px;
+  width: 19px;
+  background-color: var(--stroke01-color);
+  border-radius: 16px;
+}
+.jun {
+  height: 90px;
+  width: 19px;
+  background-color: var(--stroke01-color);
+  border-radius: 16px;
+}
+
+/* 45+ users card  */
+
+/* right card */
+.float-card--right {
+  right: 120px;
+  top: 330px;
+  transform: rotate(12deg);
 }
 
 /* Header End here */
