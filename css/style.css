@@ -606,7 +606,6 @@ body {
 #approach-section {
   background-color: var(--bg02-color);
   padding: 100px 120px;
-  height: 690px;
 }
 
 #approach-parent-div {
@@ -986,7 +985,6 @@ body {
 footer {
   background: var(--bg02-color);
   padding: 100px 72px 40px;
-  height: 492px;
   color: var(--text01-color);
 }
 
